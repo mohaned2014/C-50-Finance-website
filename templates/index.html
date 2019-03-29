@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('index') }}" method="post">
+        <fieldset>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for stock in stocks %}
+                    <tr>
+                        <td>{{stock.stock_name}}</td>
+                        <td>{{stock.stock_name}}</td>
+                        <td>{{stock.shares}}</td>
+                        <td>{{stock.current_price}}</td>
+                        <td>{{stock.total}}</td>
+
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td>CASH</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>{{mycurrentmoney}}</td>
+                    </tr>
+                  </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>{{mytotalmoney}}</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </fieldset>
+    </form>
+{% endblock %}

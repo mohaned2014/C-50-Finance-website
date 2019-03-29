@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quoed
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('quote') }}" method="get">
+                <p>
+                    <b>
+                A share of {{ name }} ({{ symbol }}) costs ${{ price }}
+                    </b>
+                </p>
+
+    </form>
+{% endblock %}
