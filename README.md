@@ -1,6 +1,7 @@
 # C-50-Finance-website
 C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying Yahoo Finance for stocks' prices.
 
+![screenshot](https://github.com/mohaned2014/C-50-Finance-website/blob/master/screen.png?raw=true)
 # Specification
 ## register
 Complete the implementation of register in such a way that it allows a user to register for an account.
